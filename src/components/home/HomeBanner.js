@@ -5,12 +5,12 @@ import React from "react";import banner1 from './../../assets/images/2.jpg';
 class HomeBanner extends React.Component {
   render() {
     return (
-      <section class="section-main bg padding-y">
-      <div class="container">
-        <div class="row">
-          <aside class="col-md-3">
-            <nav class="card">
-              <ul class="menu-category">
+      <section className="section-main bg padding-y">
+      <div className="container">
+        <div className="row">
+          <aside className="col-md-3">
+            <nav className="card">
+              <ul className="menu-category">
                 <li>
                   <a href="#/page-index-2.html#">Best clothes</a>
                 </li>
@@ -29,9 +29,9 @@ class HomeBanner extends React.Component {
                 <li>
                   <a href="#/page-index-2.html#">Digital goods</a>
                 </li>
-                <li class="has-submenu">
+                <li className="has-submenu">
                   <a href="#/page-index-2.html#">More items</a>
-                  <ul class="submenu">
+                  <ul className="submenu">
                     <li>
                       <a href="#/page-index-2.html#">Submenu name</a>
                     </li>
@@ -49,9 +49,9 @@ class HomeBanner extends React.Component {
               </ul>
             </nav>
           </aside>
-          <div class="col-md-9">
-            <article class="banner-wrap">
-              <img src={banner1} class="w-100 rounded" />
+          <div className="col-md-9">
+            <article className="banner-wrap">
+              <img src={banner1} className="w-100 rounded" />
             </article>
           </div>
         </div>

@@ -2183,7 +2183,16 @@ textarea.form-control {
   font-size: 80%;
   color: #fa3434;
 }
-
+.invalid-feedback.show {
+  display: block;
+  display: block;
+}
+.text-right{
+  text-align: end;
+}
+.text-uppercase{  
+  text-transform: uppercase;
+}
 .invalid-tooltip {
   position: absolute;
   top: 100%;

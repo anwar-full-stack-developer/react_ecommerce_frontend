@@ -1,24 +1,28 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { applyMiddleware, compose, createStore, combineReducers } from "redux";
+// import { applyMiddleware, compose, createStore, combineReducers } from "redux";
+import { combineReducers } from "redux";
 import thunkMiddleware from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
+// import { composeWithDevTools } from "redux-devtools-extension";
 
 import monitorReducersEnhancer from "./enhancers/monitorReducers";
 import loggerMiddleware from "./middleware/logger";
 // import rootReducer from './reducers'
 
-
 import { productListReducer } from "../reducers/productReducer";
+import { loginReducer } from "../reducers/login.reducer";
+import { loggedinUserReducer } from "../reducers/loggedin-user.reducer";
+import { forgotPasswordReducer } from "../reducers/forgot-password.reducer";
+import { resetPasswordReducer } from "../reducers/reset-password.reducer";
+import { registerReducer } from "../reducers/register.reducer";
+
 const initialState = {};
 const rootReducer = combineReducers({
-  example: () => [],
-  productList: productListReducer
-  // products: () => [
-  //   {id: 10, name: "iPhone 13", price: 1000},
-  //   {id: 11, name: "Samsung A30", price: 500},
-  //   {id: 12, name: "Mortola M2", price: 300},
-  //   {id: 13, name: "Symphony Wz", price: 200}
-  // ]
+  productList: productListReducer,
+  loginReducer,
+  loggedinUserReducer: loggedinUserReducer,
+  forgotPasswordReducer,
+  resetPasswordReducer,
+  registerReducer,
 });
 
 // export default function configureStore(preloadedState) {

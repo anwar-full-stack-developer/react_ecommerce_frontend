@@ -9,8 +9,8 @@ import "./assets/fontawesome/css/all.min.css";
 import "./assets/ui.css";
 import "./assets/responsive.css";
 
-import $ from "jquery";
-import Popper from "popper.js";
+// import $ from "jquery";
+// import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/script";
@@ -22,13 +22,14 @@ import HomePage from "./components/home/HomePage";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./pages/includes/Footer";
-import Header from "./pages/includes/Header";
+import {Header} from "./pages/includes/Header";
 import Navbar from "./pages/includes/Navbar";
 import ProductPage from "./components/product/ProductPage";
 import ShoppingCart from "./components/shoppingCart/ShoppingCart";
-import Register from "./components/userAccount/Register";
-import Login from "./components/userAccount/Login";
-import ForgotPassword from "./components/userAccount/ForgotPassword";
+import {Register} from "./components/userAccount/Register";
+import {Login} from "./components/userAccount/Login";
+import {Logout} from "./components/userAccount/Logout";
+import {ForgotPassword} from "./components/userAccount/ForgotPassword";
 import Checkout from "./components/shoppingCart/Checkout";
 import MyTransactionHistory from "./components/myAccount/MyTransactionHistory";
 import MyWishlist from "./components/myAccount/MyWishlist";
@@ -39,6 +40,8 @@ import MyAccountSettings from "./components/myAccount/MyAccountSettings";
 import MySellingItems from "./components/myAccount/MySellingItems";
 import MyReceivedOrders from "./components/myAccount/MyReceivedOrders";
 import ProductDetails from "./components/product/ProductDetails";
+import { MyAccount } from "./components/myAccount/MyAccount";
+import { ResetPassword } from "./components/userAccount/ResetPassword";
 
 const store = configureAppStore();
 
@@ -71,8 +74,17 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/logout">
+            <Logout />
+          </Route>
           <Route path="/forgot-password">
             <ForgotPassword />
+          </Route>
+          <Route path="/reset-password/:token">
+            <ResetPassword />
+          </Route>
+          <Route path="/myaccount">
+            <MyAccount />
           </Route>
           <Route path="/myaccount-order-history">
             <MyOrderHistory />

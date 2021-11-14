@@ -1,59 +1,75 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import logo from './../../assets/images/logo.png';
+import logo from "./../../assets/images/logo.png";
 
 class Header extends React.Component {
   render() {
+    //update this component from another component using connect to redux store
+    const {isLoggedin} = this.props.loggedinUserReducer;
+    const user = this.props?.loggedinUserReducer?.result;
+    console.log(
+      "Auth reducer from Header component ",
+      this.props.loggedinUserReducer
+    );
     return (
-      <header class="section-header">
-        <section class="header-main border-bottom">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-2 col-4">
-                <Link to="/" class="brand-wrap">
-                  <img class="logo" src={logo} />
+      <header className="section-header">
+        <section className="header-main border-bottom">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-2 col-4">
+                <Link to="/" className="brand-wrap">
+                  <img alt="logo" className="logo" src={logo} />
                 </Link>
               </div>
-              <div class="col-lg-6 col-sm-12">
-                <form action="#/page-index-2.html#" class="search">
-                  <div class="input-group w-100">
+              <div className="col-lg-6 col-sm-12">
+                <form action="#/page-index-2.html#" className="search">
+                  <div className="input-group w-100">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Search"
                     />
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="submit">
-                        <i class="fa fa-search"></i>
+                    <div className="input-group-append">
+                      <button className="btn btn-primary" type="submit">
+                        <i className="fa fa-search"></i>
                       </button>
                     </div>
                   </div>
                 </form>
               </div>
-              <div class="col-lg-4 col-sm-6 col-12">
-                <div class="widgets-wrap float-md-right">
-                  <div class="widget-header mr-3">
+              <div className="col-lg-4 col-sm-6 col-12">
+                <div className="widgets-wrap float-md-right">
+                  <div className="widget-header mr-3">
                     <Link
                       to="/shopping-cart"
-                      class="icon icon-sm rounded-circle border"
+                      className="icon icon-sm rounded-circle border"
                     >
-                      <i class="fa fa-shopping-cart"></i>
+                      <i className="fa fa-shopping-cart"></i>
                     </Link>
-                    <span class="badge badge-pill badge-danger notify">0</span>
+                    <span className="badge badge-pill badge-danger notify">0</span>
                   </div>
-                  <div class="widget-header icontext">
+                  <div className="widget-header icontext">
                     <Link
-                      to="/myaccount-order-history"
-                      class="icon icon-sm rounded-circle border bg-primary"
+                      to="/myaccount"
+                      className="icon icon-sm rounded-circle border bg-primary"
                     >
-                      <i class="fa fa-user white"></i>
+                      <i className="fa fa-user white"></i>
                     </Link>
-                    <div class="text">
-                      <span class="text-muted">Welcome!</span>
+                    <div className="text">
+                      <span className="text-muted">{user?.first_name ? " ".concat(user?.first_name) : "Welcome!"}</span>
                       <div>
-                        <Link to="login">Sign in</Link>
-                        <span> | </span>
-                        <Link to="/register">Register</Link>
+                        {!isLoggedin? (
+                          <>
+                            <Link to="/login">Sign in</Link>
+                            <span> | </span>
+                            <Link to="/register">Register</Link>
+                          </>
+                        ) : (
+                          <>
+                            <Link to="/logout">Logout</Link>
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -67,4 +83,24 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+//state mas from redux store, based on initial state
+const mapStateToProps = (state) => {
+  const { authReducer, loggedinUserReducer } = state;
+  return { authReducer, loggedinUserReducer };
+};
+
+//[dispatch first way] works from all expects
+// const mapDispatchToProps = {
+//   // dispatch,
+//   authAction: userActions.login,
+//   // logout: userActions.logout
+// };
+
+//[dispatch secound way] works from all expexts
+const mapDispatchToProps = (dispatch) => ({
+  dispatch,
+});
+
+const connectedLogin = connect(mapStateToProps, mapDispatchToProps)(Header);
+export { connectedLogin as Header };
+// export default Header;

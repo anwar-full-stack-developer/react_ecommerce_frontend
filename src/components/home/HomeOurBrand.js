@@ -10,47 +10,47 @@ import logo5 from "./../../assets/images/brand/logo5.png";
 class HomeOurBrand extends React.Component {
   render() {
     return (
-      <section class="section-name bg padding-y-sm">
-      <div class="container">
-      <header class="section-heading">
-        <h3 class="section-title">Our Brands</h3>
+      <section className="section-name bg padding-y-sm">
+      <div className="container">
+      <header className="section-heading">
+        <h3 className="section-title">Our Brands</h3>
       </header>
 
-      <div class="row">
-        <div class="col-md-2 col-6">
-          <figure class="box item-logo">
+      <div className="row">
+        <div className="col-md-2 col-6">
+          <figure className="box item-logo">
             <a href="#"><img src={logo1} /></a>
-            <figcaption class="border-top pt-2">36 Products</figcaption>
+            <figcaption className="border-top pt-2">36 Products</figcaption>
           </figure>
         </div>
-        <div class="col-md-2  col-6">
-          <figure class="box item-logo">
+        <div className="col-md-2  col-6">
+          <figure className="box item-logo">
             <a href="#"><img src={logo2} /></a>
-            <figcaption class="border-top pt-2">980 Products</figcaption>
+            <figcaption className="border-top pt-2">980 Products</figcaption>
           </figure>
         </div> 
-        <div class="col-md-2  col-6">
-          <figure class="box item-logo">
+        <div className="col-md-2  col-6">
+          <figure className="box item-logo">
             <a href="#"><img src={logo3} /></a>
-            <figcaption class="border-top pt-2">25 Products</figcaption>
+            <figcaption className="border-top pt-2">25 Products</figcaption>
           </figure>
         </div> 
-        <div class="col-md-2  col-6">
-          <figure class="box item-logo">
+        <div className="col-md-2  col-6">
+          <figure className="box item-logo">
             <a href="#"><img src={logo4} /></a>
-            <figcaption class="border-top pt-2">72 Products</figcaption>
+            <figcaption className="border-top pt-2">72 Products</figcaption>
           </figure>
         </div> 
-        <div class="col-md-2  col-6">
-          <figure class="box item-logo">
+        <div className="col-md-2  col-6">
+          <figure className="box item-logo">
             <a href="#"><img src={logo5} /></a>
-            <figcaption class="border-top pt-2">41 Products</figcaption>
+            <figcaption className="border-top pt-2">41 Products</figcaption>
           </figure> 
         </div> 
-        <div class="col-md-2  col-6">
-          <figure class="box item-logo">
+        <div className="col-md-2  col-6">
+          <figure className="box item-logo">
             <a href="#"><img src={logo2} /></a>
-            <figcaption class="border-top pt-2">12 Products</figcaption>
+            <figcaption className="border-top pt-2">12 Products</figcaption>
           </figure> 
         </div>
       </div>

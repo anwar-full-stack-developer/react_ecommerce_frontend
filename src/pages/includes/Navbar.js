@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 class Navbar extends React.Component {
   render() {
     return (
-      <nav class="navbar navbar-main navbar-expand-lg navbar-light border-bottom">
-      <div class="container">
+      <nav className="navbar navbar-main navbar-expand-lg navbar-light border-bottom">
+      <div className="container">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#main_nav"
@@ -15,104 +15,104 @@ class Navbar extends React.Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+        <div className="collapse navbar-collapse" id="main_nav">
+          <ul className="navbar-nav">
+            <li className="nav-item dropdown">
               <Link
-                class="nav-link"
+                className="nav-link"
                 to="/"
                 >Home</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
-                class="nav-link"
+                className="nav-link"
                 to="/product"
                 >Products</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
-                class="nav-link"
+                className="nav-link"
                 to="/about"
                 >About</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#/page-index-2.html#"
                 >Supermarket</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#/page-index-2.html#"
                 >Partnership</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#/page-index-2.html#"
                 >Baby &amp; Toys</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#/page-index-2.html#"
                 >Fitness sport</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#/page-index-2.html#"
                 >Clothing</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#/page-index-2.html#"
                 >Furnitures</a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 href="#/page-index-2.html#"
                 aria-expanded="false"
               >
                 More</a
               >
-              <div class="dropdown-menu">
+              <div className="dropdown-menu">
                 <a
-                  class="dropdown-item"
+                  className="dropdown-item"
                   href="#/page-index-2.html#"
                   >Foods and Drink</a
                 >
                 <a
-                  class="dropdown-item"
+                  className="dropdown-item"
                   href="#/page-index-2.html#"
                   >Home interior</a
                 >
-                <div class="dropdown-divider"></div>
+                <div className="dropdown-divider"></div>
                 <a
-                  class="dropdown-item"
+                  className="dropdown-item"
                   href="#/page-index-2.html#"
                   >Category 1</a
                 >
                 <a
-                  class="dropdown-item"
+                  className="dropdown-item"
                   href="#/page-index-2.html#"
                   >Category 2</a
                 >
                 <a
-                  class="dropdown-item"
+                  className="dropdown-item"
                   href="#/page-index-2.html#"
                   >Category 3</a
                 >

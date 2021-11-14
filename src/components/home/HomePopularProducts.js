@@ -13,120 +13,120 @@ import pp9 from "./../../assets/images/9.jpg";
 class HomePopularProducts extends React.Component {
   render() {
     return (
-      <section class="section-name padding-y-sm">
-        <div class="container">
-          <header class="section-heading">
+      <section className="section-name padding-y-sm">
+        <div className="container">
+          <header className="section-heading">
             <a
               href="#/page-index-2.html#"
-              class="btn btn-outline-primary float-right"
+              className="btn btn-outline-primary float-right"
             >
               See all
             </a>
-            <h3 class="section-title">Popular products</h3>
+            <h3 className="section-title">Popular products</h3>
           </header>
 
-          <div class="row">
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+          <div className="row">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp1} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Just another product name
                   </a>
-                  <div class="price mt-1">$179.00</div>
+                  <div className="price mt-1">$179.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp2_1} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Some item name here
                   </a>
-                  <div class="price mt-1">$280.00</div>
+                  <div className="price mt-1">$280.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp3} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Great product name here
                   </a>
-                  <div class="price mt-1">$56.00</div>
+                  <div className="price mt-1">$56.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp4} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Just another product name
                   </a>
-                  <div class="price mt-1">$179.00</div>
+                  <div className="price mt-1">$179.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp5} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Just another product name
                   </a>
-                  <div class="price mt-1">$179.00</div>
+                  <div className="price mt-1">$179.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp6} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Some item name here
                   </a>
-                  <div class="price mt-1">$280.00</div>
+                  <div className="price mt-1">$280.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp7} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Great product name here
                   </a>
-                  <div class="price mt-1">$56.00</div>
+                  <div className="price mt-1">$56.00</div>
                 </figcaption>
               </div>
             </div>
-            <div class="col-md-3">
-              <div href="#" class="card card-product-grid">
-                <a href="#/page-index-2.html#" class="img-wrap">
+            <div className="col-md-3">
+              <div href="#" className="card card-product-grid">
+                <a href="#/page-index-2.html#" className="img-wrap">
                   <img src={pp9} />
                 </a>
-                <figcaption class="info-wrap">
-                  <a href="#/page-index-2.html#" class="title">
+                <figcaption className="info-wrap">
+                  <a href="#/page-index-2.html#" className="title">
                     Just another product name
                   </a>
-                  <div class="price mt-1">$179.00</div>
+                  <div className="price mt-1">$179.00</div>
                 </figcaption>
               </div>
             </div>
